@@ -1,5 +1,5 @@
 from cupy.math import ufunc
-
+from cupy import core
 
 # TODO(okuta): Implement around
 
@@ -45,3 +45,8 @@ trunc = ufunc.create_math_ufunc(
     .. seealso:: :data:`numpy.trunc`
 
     ''')
+
+
+round = core.create_ufunc(
+            'cupy_round', ('e->e', 'f->f', 'd->d'),
+            'out0 = round(in0)', doc="")
