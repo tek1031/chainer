@@ -282,6 +282,8 @@ rint = math.rounding.rint
 floor = math.rounding.floor
 ceil = math.rounding.ceil
 trunc = math.rounding.trunc
+round = math.rounding.round
+
 
 sum = math.sumprod.sum
 prod = math.sumprod.prod
